@@ -1,1 +1,6 @@
-/* Empty. Add your own CSS if you like */
+.deleteItem{
+  color: red;
+}
+.checkbox input:before, .checkbox .checkbox-icon:before {
+  border-color: grey;
+}
