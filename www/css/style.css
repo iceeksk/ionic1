@@ -4,3 +4,11 @@
 .checkbox input:before, .checkbox .checkbox-icon:before {
   border-color: grey;
 }
+.checked{
+  color: grey;
+  text-decoration: line-through;
+}
+.item-icon-right .icon {
+  position: absolute;
+  z-index: 4;
+}

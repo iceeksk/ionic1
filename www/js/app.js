@@ -17,27 +17,27 @@ angular.module('ToDo', ['ionic'])
       {
         "title": "Learn Ionic",
         "description": "читать доки, делать таски",
-        "done": "false"
+        "done": false
       },
       {
         "title": "Learn Ionic 2",
         "description": "читать доки, делать таски",
-        "done": "false"
+        "done": false
       },
       {
         "title": "Learn Angular 1.x",
         "description": "читать доки, делать таски",
-        "done": "false"
+        "done": false
       },
       {
         "title": "Learn AngularJS",
         "description": "читать доки, делать таски",
-        "done": "false"
+        "done": false
       },
       {
         "title": "Learn Cordova",
         "description": "читать доки, делать таски",
-        "done": "false"
+        "done": false
       }
     ];
 
@@ -50,10 +50,17 @@ angular.module('ToDo', ['ionic'])
 
   $scope.openAddTask = function () {
     $scope.taskModal.show();
-  }
+  };
 
   $scope.closeAddTask = function () {
     $scope.taskModal.hide();
-  }
+  };
+
+  $scope.openTask = function (id) {
+
+  };
+  $scope.dellTask = function (id) {
+    $scope.tasks.splice(id,1);
+  };
 
 });
